@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/HealthCheck/HealthCheck/obj/Debug
+/HealthCheck/HealthCheckAPI/bin/Debug/net6.0
+/HealthCheck/HealthCheckAPI/obj
+/HealthCheck/HealthCheck/.vscode
+/HealthCheck/.vs
+/HealthCheck/.cr/personal/FavoritesList
