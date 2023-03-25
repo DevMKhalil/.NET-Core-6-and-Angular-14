@@ -1,4 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebuggerFlavor>LaunchJsonDebugger</DebuggerFlavor>
+    <LaunchJsonTarget>{
+  "type": "chrome",
+  "request": "launch",
+  "name": "localhost (Chrome)",
+  "url": "https://localhost:4200",
+  "webRoot": "C:\\Users\\ttgkp\\source\\repos\\DevMKhalil\\.NET-Core-6-and-Angular-14\\HealthCheck\\HealthCheck"
+}</LaunchJsonTarget>
+  </PropertyGroup>
 </Project>
