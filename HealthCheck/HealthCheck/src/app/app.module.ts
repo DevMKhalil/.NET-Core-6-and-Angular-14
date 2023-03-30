@@ -11,14 +11,15 @@ import { HealthCheckComponent } from './health-check/health-check.component';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent,
-    FetchDataComponent,
-    NavMenuComponent,
+    //AppComponent,
+    //HomeComponent,
+    //FetchDataComponent,
+    //NavMenuComponent,
     HealthCheckComponent
   ],
   imports: [
-    BrowserModule, HttpClientModule, AppRoutingModule
+    BrowserModule, HttpClientModule, AppRoutingModule,
+    AppComponent, HomeComponent, NavMenuComponent, FetchDataComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

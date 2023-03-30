@@ -1,11 +1,14 @@
-import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 @Component({
+  standalone: true,
   selector: 'app-fetch-data',
   templateUrl: './fetch-data.component.html',
-  styleUrls: ['./fetch-data.component.css']
+  styleUrls: ['./fetch-data.component.css'],
+  imports: [CommonModule, HttpClientModule]
 })
 export class FetchDataComponent implements OnInit {
   public forecasts?: WeatherForecast[];
