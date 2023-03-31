@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app/app-routing/app-routing.module';
 import { AppComponent } from './app/app.component';
 
 import { environment } from './environments/environment';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 if (environment.production) {
   enableProdMode();
@@ -11,7 +12,7 @@ if (environment.production) {
 
 bootstrapApplication(AppComponent, {
   providers: [
-    importProvidersFrom(AppRoutingModule)
+    importProvidersFrom(AppRoutingModule, BrowserAnimationsModule)
   ],
 });
 

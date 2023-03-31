@@ -10,6 +10,10 @@ const routes: Routes = [
   {
     path: 'fetch-data',
     loadComponent: () => import('../fetch-data/fetch-data.component').then(mod => mod.FetchDataComponent)
+  },
+  {
+    path: 'health-check',
+    loadComponent: () => import('../health-check/health-check.component').then(mod => mod.HealthCheckComponent)
   }
 ];
 
